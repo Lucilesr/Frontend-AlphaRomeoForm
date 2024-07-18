@@ -1,0 +1,122 @@
+/* Conteneur principal */
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background: url('/desktop.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden; /* Empêche débordement éléments hors fenêtre */
+}
+
+/* Header rectangle */
+.header {
+    width: 100%;
+    height: 9%;
+    background-color: #161821;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer img {
+    height: 6vh;
+}
+
+/* Conteneur bloc textes */
+.textContainer {
+    flex: 1; /* conteneur de texte de prendre tout l'espace disponible*/
+    margin-top: 3%;
+    color: #fff;
+    padding-left: 5%;
+    line-height: 190%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15%;
+    margin-right: 35%;
+    padding-right: 10%;
+    font-weight: 200;
+}
+
+/* Titre principal : de nouvelles émotions */
+.title {
+    font-family: inherit;
+    font-size: 42px;
+    line-height: 110%;
+    letter-spacing:0.5px;
+    text-align: left;
+	margin-right: 10%;
+}
+
+/* Sous-titre : réservez votre essai */
+.subtitle {
+	margin-top: 1%;
+    font-size: 15px;
+	font-weight:lighter;
+	line-height: 130%;
+	margin-right: 20%;
+}
+
+.formulaire {
+	margin-top: 5%;
+    padding: 5%;
+	padding-right: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: #fff;
+    background-color: #62676f36;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60%;
+    border-radius: 2%;
+    width: 60%;
+}
+
+
+.footer {
+    height: 8%;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /*liens en colonne sur tel */
+    justify-content: space-around;
+	color: #fff;
+    position: absolute; /* Fixe footer en bas*/
+    bottom: 0;
+}
+
+/* responsive pour écrans de 768px ou moins */
+@media only screen and (max-width: 768px) {
+    .textContainer {
+        padding: 0 5%;
+        margin-right: 0;
+        margin-top: 20px;
+        padding-right: 5%;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .formulaire {
+        width: 100%;
+        margin: 0 auto;
+        padding: 3%;
+    }
+
+    .footer {
+		padding-left: 5%;
+        padding-top: 1rem;
+		padding-bottom: 1rem;
+        flex-direction: column; /* Alignement des liens en colonne */
+        align-items: flex-start;
+        height: auto;
+		line-height: 180%;
+    }
+
+}

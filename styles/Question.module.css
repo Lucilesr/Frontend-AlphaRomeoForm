@@ -1,0 +1,79 @@
+  .questionContainer {
+    flex-direction: column;
+    text-align: left;
+    margin-right: 15%;
+  }
+  
+  .questionContainer h2 {
+    margin-bottom: 2%;
+  }
+  
+  .questionContainer button {
+    display:flex;
+    background-color: #000000a7;
+    order: 1;
+    flex-grow: 0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  
+  .questionContainer button:hover {
+    background-color: #000000d1;
+    border: rgb(220, 4, 4) solid 1px;
+  }
+  
+  .questionContainer form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .questionContainer form input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    line-height: 100%;
+  }
+  
+  .questionContainer form button {
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  .questionContainer form button:hover {
+    background-color: #555;
+  }
+
+  .confirmationContainer {
+    padding-top: 10%;
+    /* margin-right: 10%; */
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 24%; 
+  }
+  
+  .confirmText {
+    max-width: 100%;
+  }
+  
+  .signatureText {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
