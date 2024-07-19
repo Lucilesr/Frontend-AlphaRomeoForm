@@ -147,7 +147,8 @@ function Home() {
         <div className={styles.subtitle}>
           Réservez un essai gratuitement en remplissant le formulaire et faites connaissance avec l'univers Alfa Romeo.
         </div> 
-        <div className={styles.formulaire}>
+      </div>
+        <div className={styles.formSize}>
           {step === 1 && <ModelOption onSelect={handleModelSelect} />} 
           {step === 2 && <InterestOption setInterest={setInterest} />} 
           {step === 3 && formData.interest === 'purchase' && <PurchaseOption onSelect={handlePurchaseOptionSelect} />} 
@@ -159,7 +160,6 @@ function Home() {
           <div className={styles.confirmationContainer}>
             {step === 5 && <FormConfirmation />} 
           </div>
-        </div>
       </div>
       <div className={styles.footer}>
         <div className={styles.footerLink}>POLITIQUE DE CONFIDENTIALITE</div>

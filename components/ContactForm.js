@@ -9,7 +9,6 @@ function ContactForm({ onChange, nextStep }) {
     phoneNumber: '',
   });
 
-  // Fonction pour gérer le changement du numéro de téléphone avec formatage
   const handlePhoneChange = (e) => {
     const value = e.target.value.replace(/\D/g, '');
     let formattedPhone = value;
@@ -17,28 +16,26 @@ function ContactForm({ onChange, nextStep }) {
       formattedPhone = value.slice(0, 2) + ' ' + value.slice(2, 4) + ' ' + value.slice(4, 6) + ' ' + value.slice(6, 8) + ' ' + value.slice(8, 10);
     }
     setFormData({ ...formData, phoneNumber: formattedPhone });
-    onChange({ target: { name: 'phoneNumber', value: formattedPhone } }); // Transmettre la nouvelle valeur via onChange
+    onChange({ target: { name: 'phoneNumber', value: formattedPhone } });
   };
 
-  // Fonction pour gérer les changements dans les champs du formulaire
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-    onChange(e); // Transmettre le changement via onChange
+    onChange(e);
   };
 
-  // Fonction pour gérer la soumission du formulaire
   const handleSubmit = (e) => {
     e.preventDefault();
     nextStep();
   };
 
   return (
-    <div className={styles.questionContainer}>
+    <div className={styles.contactFormContainer}>
       <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.formGroup}>
-          <label htmlFor="firstName">PRÉNOM</label><br />
+          <label htmlFor="firstName" >PRÉNOM</label><br />
           <input
             type="text"
             id="firstName"

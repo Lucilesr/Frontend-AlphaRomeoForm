@@ -23,55 +23,43 @@
 }
 
 .logoContainer img {
-    height: 6vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    height: 4vh;
 }
 
-/* Conteneur bloc textes */
+/* Bloc textes */
 .textContainer {
-    flex: 1; /* conteneur de texte de prendre tout l'espace disponible*/
-    margin-top: 3%;
+    flex: 1; 
+    margin-top: 4%;
     color: #fff;
     padding-left: 5%;
-    line-height: 190%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 15%;
+    line-height: 150%;
     margin-right: 35%;
     padding-right: 10%;
-    font-weight: 200;
+    max-height: 28%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
 }
 
 /* Titre principal : de nouvelles émotions */
 .title {
-    font-family: inherit;
-    font-size: 42px;
-    line-height: 110%;
+    font-size: 34px;
+    line-height: 130%;
     letter-spacing:0.5px;
     text-align: left;
 	margin-right: 10%;
+    font-weight: 50;
+    flex-wrap: wrap;
 }
 
 /* Sous-titre : réservez votre essai */
 .subtitle {
 	margin-top: 1%;
-    font-size: 15px;
+    font-size: 16px;
 	font-weight:lighter;
-	line-height: 130%;
+	line-height: 160%;
 	margin-right: 20%;
-}
-
-.formulaire {
-	margin-top: 5%;
-    padding: 5%;
-	padding-right: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    color: #fff;
-    background-color: #62676f36;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60%;
-    border-radius: 2%;
-    width: 60%;
 }
 
 
@@ -98,22 +86,31 @@
         padding-right: 5%;
     }
 
+    .formSize {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre les éléments horizontalement */
+        justify-content: center; /* Centre les éléments verticalement */
+        width: 100%; /* Prend toute la largeur disponible */
+        padding: 20px;
+        box-sizing: border-box; /* Inclut padding et bordure dans la largeur totale */
+    }
+    
+
     .title {
         font-size: 32px;
         line-height: 48px;
     }
 
-    .formulaire {
-        width: 100%;
-        margin: 0 auto;
-        padding: 3%;
+    .subtitle{
+        padding-bottom: 10%;
     }
 
     .footer {
 		padding-left: 5%;
         padding-top: 1rem;
 		padding-bottom: 1rem;
-        flex-direction: column; /* Alignement des liens en colonne */
+        flex-direction: column; /* Alignement colonne des liens */
         align-items: flex-start;
         height: auto;
 		line-height: 180%;
