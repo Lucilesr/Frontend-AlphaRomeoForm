@@ -21,8 +21,9 @@
   }
   
   .cityName {
-    font-size: 1.2em;
+    font-size: 30px;
     margin: 20px 0;
+    color: aliceblue;
   }
   
   .buttons {

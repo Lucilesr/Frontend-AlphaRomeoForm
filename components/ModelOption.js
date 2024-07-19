@@ -1,6 +1,6 @@
 import styles from '../styles/Question.module.css';
 
-function ModelQuestion({ onSelect }) {
+function ModelOption({ onSelect }) {
   return (
     <div className={styles.questionContainer}>
       <h2>Quel est le type de modèle que vous souhaitez tester ?</h2>
@@ -12,4 +12,4 @@ function ModelQuestion({ onSelect }) {
   );
 }
 
-export default ModelQuestion;
+export default ModelOption;
